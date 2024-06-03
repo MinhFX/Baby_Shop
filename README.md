@@ -30,6 +30,7 @@ Thông tin:
 - Folder BabyShop là các file xử lý PHP trong đó có thư mục Admin dành cho quản trị
 - db_babyshop.sql là file SQL
 
-* Nếu cần kết nối cho Localhost hoặc Server thì chỉ cần bỏ Folder BabyShop vào Xampp hoặc Hosting và thay đổi đường dẫn ở Class MainLink.java trong Project.  
+* Nếu cần kết nối cho Localhost hoặc Server thì chỉ cần bỏ Folder BabyShop vào Xampp hoặc Hosting và thay đổi đường dẫn ở Class MainLink.java trong Project.
+
 ![image](https://github.com/MinhFX/Baby_Shop/assets/146899219/dd703e35-f1f5-4320-b9e3-a3a390b6be9f)
 
