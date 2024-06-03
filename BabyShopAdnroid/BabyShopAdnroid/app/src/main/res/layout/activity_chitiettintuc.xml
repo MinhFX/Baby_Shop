@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/btnBack"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:onClick="backNews"
+                    android:src="@drawable/back" />
+
+                <TextView
+                    android:id="@+id/titleMainNew"
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Tiêu đề"
+                    android:textColor="#272459"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imgNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/newName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="Tiêu đề"
+                        android:textColor="@color/Babyshop_color_1"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="start"
+                            android:text="Ngày đăng" />
+
+                        <TextView
+                            android:id="@+id/txtDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="end"
+                            android:text="2023-11-08"
+                            android:textColor="@color/Babyshop_color_main" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="3dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/netdut" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="Nội dung"
+                            android:textColor="@color/Babyshop_color_1"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtcontentNew"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="Đây là cửa hàng đầu tiên tại HCM"
+                            android:textAlignment="viewStart"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="3dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/netdut" />
+
+                    <TextView
+                        android:id="@+id/txtNguoidang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Người đăng"
+                        android:gravity="right"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textSize="16dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

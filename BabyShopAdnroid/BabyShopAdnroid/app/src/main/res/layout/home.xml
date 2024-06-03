@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:elevation="1dp"
+    tools:context=".Home">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1400dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/txtSearch"
+                    android:layout_width="560dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_search"
+                    android:backgroundTint="@null"
+                    android:imeOptions="actionSearch"
+                    android:drawableLeft="@drawable/ic_search"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="Tìm kiếm..."
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/imageButton3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/rating"
+                        tools:src="@drawable/rating" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/imageButton4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bell"
+                        tools:src="@drawable/bell" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+
+            <ViewFlipper
+                android:id="@+id/vfSliderImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:autoStart="true"
+                android:flipInterval="5000"
+                android:inAnimation="@android:anim/slide_in_left"
+                android:orientation="horizontal"
+                android:outAnimation="@android:anim/slide_out_right" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCategoriesName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="Khuyến mãi"
+                        android:textColor="@color/Babyshop_color_1"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:gravity="end"
+                        android:onClick="btnGoVoucherAll"
+                        android:text="Xem tất cả"
+                        android:textColor="@color/Babyshop_color_main"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvVoucher"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView38"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="Sữa bột tin dùng"
+                        android:textColor="@color/Babyshop_color_1"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvProducts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView39"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="Bột ăn dặm"
+                        android:textColor="@color/Babyshop_color_1"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvProducts2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="vertical"></LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar4"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom"
+            android:paddingStart="0dp"
+            android:paddingLeft="0dp"
+            android:paddingEnd="0dp"
+            android:paddingRight="0dp"
+            app:addElevationShadow="true"
+            app:backgroundTint="#FFFFFF"
+            app:elevation="6sp"
+            app:fabAlignmentMode="center"
+            app:fabAnchorMode="cradle"
+            app:fabAnimationMode="slide"
+            app:fabCradleMargin="6dp"
+            app:fabCradleRoundedCornerRadius="14dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="clip_horizontal|top"
+                android:translationX="-10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        app:srcCompat="@drawable/ic_appbar_1"
+                        tools:srcCompat="@drawable/ic_appbar_1" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="78dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:gravity="center"
+                        android:text="Trang chủ"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/Babyshop_color_main"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lInearTinTuc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="clickNews"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        app:srcCompat="@drawable/ic_appbar_2"
+                        tools:srcCompat="@drawable/ic_appbar_2" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="78dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:gravity="center"
+                        android:text="Tin tức"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/babyshop_color_e"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        app:srcCompat="@drawable/ic_appbar_2"
+                        tools:srcCompat="@drawable/ic_appbar_2" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="104dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:gravity="center"
+                        android:text="Tin tức"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/babyshop_color_e"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearGioHang"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="clickGiohang"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView13"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        app:srcCompat="@drawable/ic_appbar_3"
+                        tools:srcCompat="@drawable/ic_appbar_3" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="78dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:gravity="center"
+                        android:text="Đơn hàng"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/babyshop_color_e"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/profileUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="clickProfile"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView14"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        app:srcCompat="@drawable/ic_appbar_4"
+                        tools:srcCompat="@drawable/ic_appbar_4" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="78dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:gravity="center"
+                        android:text="Tài khoản"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/babyshop_color_e"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            style="@style/Floating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:enabled="true"
+            android:fadeScrollbars="false"
+            android:focusable="true"
+            android:hapticFeedbackEnabled="false"
+            android:onClick="clickCart"
+            android:src="@android:drawable/ic_lock_idle_low_battery"
+            app:backgroundTint="@android:color/transparent"
+            app:ensureMinTouchTargetSize="false"
+            app:fabCustomSize="56dp"
+            app:fabSize="auto"
+            app:layout_anchor="@id/bottomAppBar4"
+            app:maxImageSize="30dp"
+            app:pressedTranslationZ="6dp"
+            app:rippleColor="#00FFFFFF"
+            app:useCompatPadding="false" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

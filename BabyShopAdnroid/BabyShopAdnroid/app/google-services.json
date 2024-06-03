@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1098170980491",
+    "project_id": "babyshop21dhtt01",
+    "storage_bucket": "babyshop21dhtt01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1098170980491:android:d618ea5a5c56a67ed05c8e",
+        "android_client_info": {
+          "package_name": "com.example.giohang"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWgQEvJ9vwAtyVFrSCcNrdpVwApxYpFMY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

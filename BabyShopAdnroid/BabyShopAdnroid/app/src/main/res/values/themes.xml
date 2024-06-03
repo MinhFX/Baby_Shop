@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Giohang" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Giohang" parent="Base.Theme.Giohang" />
+    
+    <style name="MyRatingBar" parent="Widget.AppCompat.RatingBar">
+        <item name="colorControlNormal"> @color/Babyshop_color_2 </item>
+        <item name="colorControlActivated"> @color/Babyshop_color_main </item>
+    </style>
+    <style name="AppCompatAlertDialogStyle" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@drawable/background</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+</resources>

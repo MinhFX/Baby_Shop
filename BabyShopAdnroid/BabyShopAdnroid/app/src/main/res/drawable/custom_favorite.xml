@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:angle="45"
+                android:startColor="#F35C56"
+                android:endColor="#F35C56" />
+            <corners android:radius="10dp" android:topRightRadius="0dp" />
+            <size android:width="40dp" android:height="40dp"/>
+        </shape>
+    </item>
+
+    <item android:drawable="@drawable/ic_favorite"
+        android:top="15dp"
+        android:right="15dp"
+        android:left="15dp"
+        android:bottom="15dp"
+        android:gravity="center"
+        android:height="18dp"
+        android:width="20dp">
+
+    </item>
+</layer-list>

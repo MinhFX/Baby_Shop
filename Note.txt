@@ -1,0 +1,6 @@
+Thông tin:
+- Folder BabyShopAdnroid là Project Android Studio
+- Folder BabyShop là các file xử lý PHP trong đó có thư mục Admin dành cho quản trị
+- db_babyshop.sql là file SQL
+
+Nếu cần kết nối cho Localhost hoặc Server thì chỉ cần bỏ Folder BabyShop vào Xampp hoặc Hosting và thay đổi đường dẫn ở Class MainLink.java trong Project.

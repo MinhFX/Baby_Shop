@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="BabyShop"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Giohang"
+        tools:targetApi="31">
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Rating">
+
+        </activity>
+        <activity android:name=".DanhMuc">
+
+        </activity>
+        <activity android:name=".Home">
+
+        </activity>
+        <activity android:name=".ChiTietSanPham">
+
+        </activity>
+        <activity android:name=".News">
+
+        </activity>
+        <activity android:name=".ChiTietTinTuc">
+
+        </activity>
+        <activity android:name=".Chitietdonhang">
+
+        </activity>
+        <activity android:name=".Giohang">
+
+        </activity>
+        <activity android:name=".XacNhanGioHang">
+
+        </activity>
+        <activity android:name=".DonHang">
+
+        </activity>
+        <activity android:name=".Chatbot">
+
+        </activity>
+
+        <activity android:name=".AccountEdit">
+
+        </activity>
+
+        <activity android:name=".Signup">
+
+        </activity>
+        <activity android:name=".voucherall">
+
+        </activity>
+    </application>
+
+</manifest>

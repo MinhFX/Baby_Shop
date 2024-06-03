@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Babyshop_color_1">#272459</color>
+    <color name="Babyshop_color_main">#F35C56</color>
+    <color name="babyshop_color_e">#C8C8D3</color>
+    <color name="Babyshop_color_2"> #75759E </color>
+</resources>

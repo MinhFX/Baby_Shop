@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fSliderImage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageBannerMain"
+        android:layout_width="355dp"
+        android:layout_height="151dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/banner_main" />
+</FrameLayout>

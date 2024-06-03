@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLay"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="10dp"
+    android:layout_weight="1"
+    android:background="@drawable/custom_card_item_menu"
+    android:elevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView150"
+                android:layout_width="19dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/ic_location"
+                tools:srcCompat="@drawable/ic_location" />
+
+            <TextView
+                android:id="@+id/textView130"
+                android:layout_width="48dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center_horizontal|left"
+                android:text="TP.HCM"
+                android:textColor="@color/Babyshop_color_main"
+                android:textColorHighlight="@color/Babyshop_color_main"
+                android:textColorLink="@color/Babyshop_color_main" />
+
+            <Button
+                android:id="@+id/buttonAdd"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/custom_button_plus_menu"
+                app:backgroundTint="@null" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/txtOrderProductImage"
+            android:layout_width="102dp"
+            android:layout_height="81dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:srcCompat="@drawable/item_product_1"
+            tools:srcCompat="@drawable/item_product_1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nameProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="Bộ muỗng"
+                    android:textColor="@color/Babyshop_color_1"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/quantityProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="6 chiếc"
+                    android:textColor="@color/Babyshop_color_2"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/priceProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_semibold"
+                android:gravity="right"
+                android:text="40.000đ"
+                android:textColor="@color/Babyshop_color_main"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

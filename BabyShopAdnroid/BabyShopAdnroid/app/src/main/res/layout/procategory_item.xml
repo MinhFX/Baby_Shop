@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearProCategory"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgProCategory"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/ic_category_menu_2"
+        tools:layout_editor_absoluteX="5dp"
+        tools:srcCompat="@drawable/ic_category_menu_2" />
+
+    <TextView
+        android:id="@+id/txtProCategory"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center_horizontal"
+        android:text="Đồ dùng"
+        android:textColor="@color/Babyshop_color_main"
+        android:textColorHighlight="@color/Babyshop_color_main"
+        android:textColorLink="@color/Babyshop_color_main"
+        tools:layout_editor_absoluteY="65dp" />
+
+</LinearLayout>

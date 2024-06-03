@@ -1,0 +1,33 @@
+package com.example.giohang.Item;
+
+public class MessageItem {
+    private String message;
+    private boolean isReceived;
+    public MessageItem(String message, boolean isReceived) {
+        this.message = message;
+        this.isReceived = isReceived;
+    }
+    public String getMessage(){
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public boolean isReceived() {
+        return isReceived;
+    }
+
+    public void setReceived(boolean received) {
+        isReceived = received;
+    }
+
+    public boolean getIsReceived() {
+        return isReceived;
+    }
+
+    public void setIsReceived(boolean isReceived) {
+        this.isReceived = isReceived;
+    }
+}
